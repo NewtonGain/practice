@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:practice/constants.dart';
+
+import 'location.dart';
+import 'header_with_searchbox.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -11,59 +13,149 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWithSearchBox(size: size),
-        ],
-      ),
-    );
-  }
-}
-
-class HeaderWithSearchBox extends StatelessWidget {
-  const HeaderWithSearchBox({
-    Key? key,
-    required this.size,
-  }) : super(key: key);
-
-  final Size size;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: size.height * 0.2,
-      child: Stack(
-        children: [
+          Row(
+            children: [LocationList(text: 'Select Your Area')],
+          ),
           Container(
-            padding: EdgeInsets.only(
-                left: kdefultPadding,
-                right: kdefultPadding,
-                bottom: 36 + kdefultPadding),
-            height: size.height * 0.2 - 27,
-            decoration: BoxDecoration(
-              color: kprimariColor,
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(36),
-                bottomRight: Radius.circular(36),
-              ),
-            ),
-          ),
-          Positioned(
-            child: Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Home Tutor',
-                    style: Theme.of(context).textTheme.headline5!.copyWith(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+            width: size.width * 0.4,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                ],
-              ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  color: Colors.blue,
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Mia Para',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ),
-         
+          )
         ],
-
       ),
-      
     );
   }
 }
