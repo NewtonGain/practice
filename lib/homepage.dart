@@ -15,45 +15,38 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: newMethod(),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: FlatButton(
+                color: Colors.blue,
+                onPressed: () {},
+                child: Text('About Us'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: FlatButton(
+                color: Colors.blue,
+                onPressed: () {},
+                child: Text('Help Line'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: FlatButton(
+                color: Colors.blue,
+                onPressed: () {},
+                child: Text('Top 10 Teacher'),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Body(),
       bottomNavigationBar: ButtonNavigation(),
-      drawer: Drawer(
-        child: ListView(children: [
-          Expanded(
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: FlatButton(
-                    color: Colors.blue,
-                    onPressed: () {},
-                    child: Text('Abou Us')),
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: FlatButton(
-                    color: Colors.blue,
-                    onPressed: () {},
-                    child: Text('Help Line')),
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: FlatButton(
-                    color: Colors.blue,
-                    onPressed: () {},
-                    child: Text('Top 10 Teachers Name')),
-              ),
-            ),
-          ),
-        ]),
-      ),
     );
   }
 
