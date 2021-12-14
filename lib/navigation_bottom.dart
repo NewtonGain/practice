@@ -8,7 +8,7 @@ class ButtonNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
+      height: 40,
       decoration: BoxDecoration(color: Colors.white, boxShadow: [
         BoxShadow(
             offset: Offset(0, -10),
