@@ -9,7 +9,7 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.red,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -28,7 +28,7 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.orange,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -47,7 +47,7 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.pink,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -66,12 +66,12 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.amber,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Aram Bag',
+              'Varsity',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
@@ -90,7 +90,7 @@ class ListOfLocation extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Aram Bag',
+              'Bank Para',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
@@ -104,12 +104,12 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.orange,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Aram Bag',
+              'Mahammad Para',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
@@ -123,12 +123,12 @@ class ListOfLocation extends StatelessWidget {
         FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
+          color: Colors.purple,
           onPressed: () {},
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Aram Bag',
+              'Chand Mari',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
