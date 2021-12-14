@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Test',
       theme: ThemeData(
-        scaffoldBackgroundColor: backgroundColor,
-        primaryColor: primariColor,
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: textColor),
+        scaffoldBackgroundColor: kbackgroundColor,
+        primaryColor: kprimariColor,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: ktextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home:HomePage() ,
+      
     );
   }
 }

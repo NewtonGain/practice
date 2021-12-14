@@ -33,12 +33,12 @@ class HeaderWithSearchBox extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.only(
-                left: defultPadding,
-                right: defultPadding,
-                bottom: 36 + defultPadding),
+                left: kdefultPadding,
+                right: kdefultPadding,
+                bottom: 36 + kdefultPadding),
             height: size.height * 0.2 - 27,
             decoration: BoxDecoration(
-              color: primariColor,
+              color: kprimariColor,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(36),
                 bottomRight: Radius.circular(36),
@@ -59,8 +59,11 @@ class HeaderWithSearchBox extends StatelessWidget {
               ),
             ),
           ),
+         
         ],
+
       ),
+      
     );
   }
 }
