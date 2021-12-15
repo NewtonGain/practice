@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice/wi/body.dart';
-
-import 'navigation_bottom.dart';
+import 'package:practice/body.dart';
+import 'package:practice/widgets/navigation_bottom.dart';
 
 
 class HomePage extends StatefulWidget {

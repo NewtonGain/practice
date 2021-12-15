@@ -1,197 +1,58 @@
 import 'package:flutter/material.dart';
 
 class ListOfLocation extends StatelessWidget {
+  Widget locationList(Color color, String text, Function() onpressed) {
+    return FlatButton(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      color: color,
+      onPressed: onpressed,
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Text(
+          text,
+          style: TextStyle(
+              color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.red,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Mia Para',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.blue, 'Bot-Tala', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.orange,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Bot-Tola',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.red, 'Chand-mari', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.pink,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Aram Bag',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.orange, 'Pachuriya', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.amber,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Varsity',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.yellow, 'Varsity', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.blue,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Bank Para',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.pink, 'Madical', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.orange,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Mahammad Para',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.green, 'Gate-Para', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.purple,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Chand Mari',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.purple, 'Mandar-Tala', () => null),
         SizedBox(
-          height: 21,
+          height: 20,
         ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.pink,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Tungi-Para',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+        locationList(Colors.blue, 'BedGram', () => null),
         SizedBox(
-          height: 21,
-        ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.yellow,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Pat-Gati',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        SizedBox(
-          height: 21,
-        ),
-        FlatButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          color: Colors.orange,
-          onPressed: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Medical',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
+          height: 20,
         ),
       ],
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'package:practice/wi/location.dart';
-import 'package:practice/wi/location_list.dart';
 import 'package:practice/widgets/header_with_searchbox.dart';
+import 'package:practice/widgets/location.dart';
+import 'package:practice/widgets/location_list.dart';
+
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);

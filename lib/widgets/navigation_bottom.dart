@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:practice/widgets/constants.dart';
 
-import 'constants.dart';
 
 class ButtonNavigation extends StatelessWidget {
   const ButtonNavigation({Key? key}) : super(key: key);

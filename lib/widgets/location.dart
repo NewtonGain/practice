@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'constants.dart';
-
+import 'package:practice/widgets/constants.dart';
 
 
 class LocationList extends StatelessWidget {
