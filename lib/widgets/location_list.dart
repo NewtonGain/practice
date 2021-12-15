@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:practice/Bot-Tala/bot_tala_list.dart';
-import 'package:practice/Pachuriya/pachuriya.dart';
-import 'package:practice/Varsity/varsity_list.dart';
-import 'package:practice/miapara.dart/mia_para_list.dart';
+import 'package:practice/LocationList/Bot-Tala/bot_tala_list.dart';
+import 'package:practice/LocationList/Pachuriya/pachuriya.dart';
+import 'package:practice/LocationList/Varsity/varsity_list.dart';
+import 'package:practice/LocationList/miapara.dart/mia_para_list.dart';
+
 
 class ListOfLocation extends StatefulWidget {
   @override

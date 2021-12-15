@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:practice/miapara/newton.dart';
+import 'package:practice/LocationList/miapara/newton.dart';
 
 
 
-class BotTalaList extends StatefulWidget {
+
+class VarsityList extends StatefulWidget {
   @override
-  _BotTalaListState createState() => _BotTalaListState();
+  _VarsityListState createState() => _VarsityListState();
 }
 
-class _BotTalaListState extends State<BotTalaList> {
+class _VarsityListState extends State<VarsityList> {
   Widget locationList(Color color, String text, Function() onpressed) {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

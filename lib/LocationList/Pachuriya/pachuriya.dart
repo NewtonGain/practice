@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice/miapara/newton.dart';
+import 'package:practice/LocationList/miapara/newton.dart';
+
 
 
 
