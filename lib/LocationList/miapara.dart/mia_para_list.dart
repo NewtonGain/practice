@@ -4,6 +4,7 @@ import 'package:practice/LocationList/miapara/newton.dart';
 
 
 
+
 class MiaParaList extends StatefulWidget {
   @override
   _MiaParaListState createState() => _MiaParaListState();

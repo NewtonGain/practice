@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practice/widgets/constants.dart';
 
 
+
 class LocationList extends StatelessWidget {
   const LocationList({
     Key? key,

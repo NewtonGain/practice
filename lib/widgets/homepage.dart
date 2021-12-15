@@ -11,6 +11,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Widget drawerList(String text, Function() onpressed) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: FlatButton(
+        color: Colors.blue,
+        onPressed: onpressed,
+        child: Text(text),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,30 +29,9 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: FlatButton(
-                color: Colors.blue,
-                onPressed: () {},
-                child: Text('About Us'),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: FlatButton(
-                color: Colors.blue,
-                onPressed: () {},
-                child: Text('Help Line'),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: FlatButton(
-                color: Colors.blue,
-                onPressed: () {},
-                child: Text('Top 10 Teacher'),
-              ),
-            ),
+            drawerList('About Us', () => null),
+            drawerList('Help Line', () => null),
+            drawerList('Help Line', () => null),
           ],
         ),
       ),

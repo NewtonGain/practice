@@ -4,6 +4,7 @@ import 'package:practice/LocationList/miapara/newton.dart';
 
 
 
+
 class VarsityList extends StatefulWidget {
   @override
   _VarsityListState createState() => _VarsityListState();

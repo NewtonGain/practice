@@ -18,12 +18,11 @@ class Newton extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: Column(
-              
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 50,
-                  backgroundImage: AssetImage('images/newton.jpg'),
+                  backgroundImage: AssetImage('assets/images/newton.jpg'),
                 ),
                 Text(
                   'Newton Gain',
@@ -82,9 +81,7 @@ class Newton extends StatelessWidget {
                     ],
                   ),
                 ),
-                
               ],
-              
             ),
           ),
         ),

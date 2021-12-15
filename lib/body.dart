@@ -3,6 +3,7 @@ import 'package:practice/widgets/header_with_searchbox.dart';
 import 'package:practice/widgets/location.dart';
 import 'package:practice/widgets/location_list.dart';
 
+
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
 
