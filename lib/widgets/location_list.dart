@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:practice/miapara.dart/newton.dart';
 
-class ListOfLocation extends StatelessWidget {
+class ListOfLocation extends StatefulWidget {
+  @override
+  _ListOfLocationState createState() => _ListOfLocationState();
+}
+
+class _ListOfLocationState extends State<ListOfLocation> {
   Widget locationList(Color color, String text, Function() onpressed) {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -22,7 +28,14 @@ class ListOfLocation extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        locationList(Colors.blue, 'Bot-Tala', () => null),
+        locationList(
+          Colors.blue,
+          'Bot-Tala',
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Newton()),
+          ),
+        ),
         SizedBox(
           height: 20,
         ),
