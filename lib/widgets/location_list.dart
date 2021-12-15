@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practice/miapara.dart/newton.dart';
+import 'package:practice/Bot-Tala/bot_tala_list.dart';
+import 'package:practice/Pachuriya/pachuriya.dart';
+import 'package:practice/Varsity/varsity_list.dart';
+import 'package:practice/miapara.dart/mia_para_list.dart';
 
 class ListOfLocation extends StatefulWidget {
   @override
@@ -30,28 +33,49 @@ class _ListOfLocationState extends State<ListOfLocation> {
       children: [
         locationList(
           Colors.blue,
-          'Bot-Tala',
+          'Mia-Para',
           () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Newton()),
+            MaterialPageRoute(builder: (context) => MiaParaList()),
           ),
         ),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.red, 'Chand-mari', () => null),
+        locationList(
+          Colors.red,
+          'Bot-Tala',
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => BotTalaList()),
+          ),
+        ),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.orange, 'Pachuriya', () => null),
+        locationList(
+          Colors.orange,
+          'Pachuriya',
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Pachuriya()),
+          ),
+        ),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.yellow, 'Varsity', () => null),
+        locationList(
+          Colors.yellow,
+          'Varsity',
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => VarsityList()),
+          ),
+        ),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.pink, 'Madical', () => null),
+        locationList(Colors.pink, 'Medical', () => null),
         SizedBox(
           height: 20,
         ),
