@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice/widgets/constants.dart';
 
-
 class ButtonNavigation extends StatelessWidget {
   const ButtonNavigation({Key? key}) : super(key: key);
 
@@ -17,23 +16,7 @@ class ButtonNavigation extends StatelessWidget {
       ]),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-            onPressed: () {},
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Home',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-        ],
+        children: [],
       ),
     );
   }
