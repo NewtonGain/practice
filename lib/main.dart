@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:practice/constants.dart';
+import 'package:practice/widgets/constants.dart';
+import 'package:practice/widgets/homepage.dart';
 
-import 'homepage.dart';
 
 void main() => runApp(MyApp());
 

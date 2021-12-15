@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practice/body.dart';
+import 'package:practice/wi/body.dart';
 
 import 'navigation_bottom.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

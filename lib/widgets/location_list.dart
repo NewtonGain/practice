@@ -136,6 +136,63 @@ class ListOfLocation extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(
+          height: 21,
+        ),
+        FlatButton(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          color: Colors.pink,
+          onPressed: () {},
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Tungi-Para',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 21,
+        ),
+        FlatButton(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          color: Colors.yellow,
+          onPressed: () {},
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Pat-Gati',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 21,
+        ),
+        FlatButton(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          color: Colors.orange,
+          onPressed: () {},
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Medical',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
       ],
     );
   }

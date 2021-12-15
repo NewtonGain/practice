@@ -18,10 +18,9 @@ class ButtonNavigation extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          FlatButton(
+          FloatingActionButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-            color: Colors.orange,
             onPressed: () {},
             child: Padding(
               padding: const EdgeInsets.all(8.0),
