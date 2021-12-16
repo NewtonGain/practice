@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/widgets/navigation_bottom.dart';
 
 void main() => runApp(Newton());
 
@@ -85,6 +86,7 @@ class Newton extends StatelessWidget {
             ),
           ),
         ),
+        bottomNavigationBar: ButtonNavigation(),
       ),
     );
   }

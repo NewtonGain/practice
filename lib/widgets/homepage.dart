@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:practice/body.dart';
 import 'package:practice/widgets/navigation_bottom.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -31,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             drawerList('About Us', () => null),
             drawerList('Help Line', () => null),
-            drawerList('Help Line', () => null),
+            drawerList('Top Teacher', () => null),
           ],
         ),
       ),

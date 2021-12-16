@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practice/widgets/constants.dart';
 
+import 'homepage.dart';
 
 class ButtonNavigation extends StatelessWidget {
   const ButtonNavigation({Key? key}) : super(key: key);
@@ -16,8 +17,23 @@ class ButtonNavigation extends StatelessWidget {
             color: kprimariColor.withOpacity(0.38))
       ]),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              child: Icon(
+                Icons.home,
+                size: 20,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

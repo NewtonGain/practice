@@ -4,8 +4,6 @@ import 'package:practice/LocationList/Pachuriya/pachuriya.dart';
 import 'package:practice/LocationList/Varsity/varsity_list.dart';
 import 'package:practice/LocationList/miapara/mia_para_list.dart';
 
-
-
 class ListOfLocation extends StatefulWidget {
   @override
   _ListOfLocationState createState() => _ListOfLocationState();
@@ -60,7 +58,7 @@ class _ListOfLocationState extends State<ListOfLocation> {
           'Pachuriya',
           () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Pachuriya()),
+            MaterialPageRoute(builder: (context) => PachuriyaList()),
           ),
         ),
         SizedBox(
