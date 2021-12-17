@@ -14,6 +14,7 @@ class Body extends StatelessWidget {
       child: SafeArea(
         child: Center(
           child: Column(
+            
             children: [
               HeaderWithSearchBox(size: size),
               Row(

@@ -11,7 +11,7 @@ class Newton extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Teacher List\n   Mia Para'),
+          title: Text('Newton Gain'),
           backgroundColor: Colors.teal.shade600,
           centerTitle: true,
         ),
@@ -69,11 +69,31 @@ class Newton extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.email,
+                        Icons.facebook,
                         size: 20,
                       ),
                       Text(
-                        'newtongain7@gmail.com',
+                        'https://www.facebook.com/newton.gain.96/',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      ),
+                    ],
+                  ),
+                ),
+                Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+                  color: Colors.white,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 20,
+                      ),
+                      Text(
+                        'Mia-Para',
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,

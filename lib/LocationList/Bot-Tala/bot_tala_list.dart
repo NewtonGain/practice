@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practice/LocationList/miapara/newton.dart';
 import 'package:practice/widgets/navigation_bottom.dart';
 
-class BotTalaList extends StatefulWidget {
-  @override
-  _BotTalaListState createState() => _BotTalaListState();
-}
-
-class _BotTalaListState extends State<BotTalaList> {
+class BotTalaList extends StatelessWidget {
   Widget locationList(Color color, String text, Function() onpressed) {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
