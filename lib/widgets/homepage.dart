@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: FlatButton(
-        color: Colors.blue,
+        color: Colors.pink,
         onPressed: onpressed,
         child: Text(text),
       ),
@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: newMethod(),
+      
       drawer: Drawer(
         child: ListView(
           children: [

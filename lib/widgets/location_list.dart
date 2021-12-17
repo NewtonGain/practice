@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice/LocationList/Bot-Tala/bot_tala_list.dart';
+import 'package:practice/LocationList/Medical/medical.dart';
 import 'package:practice/LocationList/Pachuriya/pachuriya.dart';
 import 'package:practice/LocationList/Varsity/varsity_list.dart';
 import 'package:practice/LocationList/miapara/mia_para_list.dart';
@@ -75,7 +76,14 @@ class _ListOfLocationState extends State<ListOfLocation> {
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.pink, 'Medical', () => null),
+        locationList(
+          Colors.pink,
+          'Medical',
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MedicalList()),
+          ),
+        ),
         SizedBox(
           height: 20,
         ),
