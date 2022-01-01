@@ -38,7 +38,9 @@ class HeaderWithSearchBox extends StatelessWidget {
                   Text(
                     'Home Tutor',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontSize: 39,
+                        fontWeight: FontWeight.bold),
                   ),
                 ],
               ),

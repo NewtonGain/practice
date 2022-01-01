@@ -27,13 +27,19 @@ class _MiaParaListState extends State<MiaParaList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: Text('hi'),
+        title: Text(
+          'Mia Para Teacher List',
+          style: TextStyle(fontSize: 28),
+        ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Center(
             child: Container(
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,

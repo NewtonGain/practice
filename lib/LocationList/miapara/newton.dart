@@ -102,6 +102,26 @@ class Newton extends StatelessWidget {
                     ],
                   ),
                 ),
+                Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+                  color: Colors.white,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.work,
+                        size: 20,
+                      ),
+                      Text(
+                        'Global Coaching Center',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

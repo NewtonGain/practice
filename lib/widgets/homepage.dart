@@ -17,16 +17,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: newMethod(),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            drawerList('About Us', () => null),
-            drawerList('Help Line', () => null),
-            drawerList('Top Teacher', () => null),
-          ],
+      drawer:Drawer(elevation: 5.0,backgroundColor: Colors.cyan,
+      child: ListView(children: const [
+          DrawerHeader(child: Center(child: Text("Help Line",style:
+           TextStyle(fontSize: 30,fontWeight: FontWeight.bold),
+               ),
+           ),
+           decoration: BoxDecoration(
+             gradient: LinearGradient(begin:Alignment.bottomLeft,
+          end: Alignment.bottomRight,
+          colors: [Colors.red,Colors.blueAccent]), 
+             ),
+          ),
+          ListTile(leading: Icon(Icons.person),title: Text("Newton Gain"),),
+          ListTile(leading: Icon(Icons.email),title: Text("newtongain7@gmail.com"),),
+          ListTile(leading: Icon(Icons.phone),title: Text("01918104119"),),
+          ]
         ),
-      ),
+        ),
       body: Body(),
       bottomNavigationBar: ButtonNavigation(),
     );
