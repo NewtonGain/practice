@@ -30,7 +30,7 @@ class _MiaParaListState extends State<MiaParaList> {
       backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text(
-          'Mia Para Teacher List',
+          'Mia Para Teachers',
           style: TextStyle(fontSize: 28),
         ),
         centerTitle: true,
@@ -85,25 +85,7 @@ class _MiaParaListState extends State<MiaParaList> {
                     height: 20,
                   ),
                   locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
+                 
                 ],
               ),
             ),

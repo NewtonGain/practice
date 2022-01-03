@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:practice/LocationList/Bed-Gram/bed_gram_list.dart';
 import 'package:practice/LocationList/Bot-Tala/bot_tala_list.dart';
+import 'package:practice/LocationList/Gate-para/gate_para_list.dart';
 import 'package:practice/LocationList/Medical/medical.dart';
 import 'package:practice/LocationList/Pachuriya/pachuriya.dart';
 import 'package:practice/LocationList/Varsity/varsity_list.dart';
+import 'package:practice/LocationList/mandartala/mandertalalist.dart';
 import 'package:practice/LocationList/miapara/mia_para_list.dart';
 
 class ListOfLocation extends StatefulWidget {
@@ -87,15 +90,27 @@ class _ListOfLocationState extends State<ListOfLocation> {
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.green, 'Gate-Para', () => null),
+        locationList(
+            Colors.green,
+            'Gate-Para',
+            () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => GateParaList()))),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.purple, 'Mandar-Tala', () => null),
+        locationList(
+            Colors.purple,
+            'Mandar-Tala',
+            () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ManderTalaList()))),
         SizedBox(
           height: 20,
         ),
-        locationList(Colors.blue, 'BedGram', () => null),
+        locationList(
+            Colors.blue,
+            'BedGram',
+            () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => BedGramList()))),
         SizedBox(
           height: 20,
         ),

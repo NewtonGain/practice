@@ -33,19 +33,9 @@ class _SplashState extends State<Splash> {
       body: SafeArea(
         child: Container(
           child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  radius: 150,
-                  child: Center(
-                    child: Text(
-                      "   WelCome \n         To\n Home Tuitor",
-                      style: TextStyle(fontSize: 36, color: Colors.black),
-                    ),
-                  ),
-                ),
-              ],
+            child: CircleAvatar(
+              radius: 150,
+              backgroundImage: AssetImage('assets/images/1.png'),
             ),
           ),
         ),

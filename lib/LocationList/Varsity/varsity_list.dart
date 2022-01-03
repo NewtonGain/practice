@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice/LocationList/miapara/newton.dart';
-
-
-
-
+import 'package:practice/widgets/navigation_bottom.dart';
 
 class VarsityList extends StatefulWidget {
   @override
@@ -29,77 +26,85 @@ class _VarsityListState extends State<VarsityList> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: SafeArea(
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              locationList(
-                Colors.blue,
-                'Newton Gain',
-                () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Newton()),
-                ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Varsity Teacher'),
+      ),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Center(
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  locationList(
+                    Colors.blue,
+                    'Newton Gain',
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Newton()),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  locationList(Colors.red, '2', () => null),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
               ),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-              locationList(Colors.red, '2', () => null),
-              SizedBox(
-                height: 20,
-              ),
-            ],
+            ),
           ),
         ),
       ),
+      bottomNavigationBar: ButtonNavigation(),
     );
   }
 }

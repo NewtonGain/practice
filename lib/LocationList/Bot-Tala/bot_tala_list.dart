@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:practice/LocationList/miapara/newton.dart';
 import 'package:practice/widgets/navigation_bottom.dart';
@@ -9,7 +11,7 @@ class BotTalaList extends StatelessWidget {
       color: color,
       onPressed: onpressed,
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(9.0),
         child: Text(
           text,
           style: TextStyle(
@@ -23,7 +25,7 @@ class BotTalaList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hi'),
+        title: Text('Bot-Tala Teachers'),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
@@ -34,7 +36,7 @@ class BotTalaList extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   locationList(
-                    Colors.blue,
+                    Colors.orange,
                     'Newton Gain',
                     () => Navigator.push(
                       context,
@@ -44,52 +46,7 @@ class BotTalaList extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  locationList(Colors.red, '2', () => null),
+                  locationList(Colors.red, 'add', () => null),
                   SizedBox(
                     height: 20,
                   ),

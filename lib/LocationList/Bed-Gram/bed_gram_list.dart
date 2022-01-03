@@ -1,17 +1,19 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:practice/LocationList/miapara/newton.dart';
 import 'package:practice/widgets/navigation_bottom.dart';
 
-class MedicalList extends StatefulWidget {
+class BedGramList extends StatefulWidget {
   @override
-  _MedicalListState createState() => _MedicalListState();
+  _BedGramListState createState() => _BedGramListState();
 }
 
-class _MedicalListState extends State<MedicalList> {
+class _BedGramListState extends State<BedGramList> {
   Widget locationList(Color color, String text, Function() onpressed) {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      color: Colors.orange,
+      color: color,
       onPressed: onpressed,
       child: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -28,7 +30,7 @@ class _MedicalListState extends State<MedicalList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Medical Teachers'),
+        title: Text('BedGram Teachers'),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
